@@ -1,0 +1,45 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --accent: #ffd417;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--white);
+  background-color: var(--black);
+  font-family: Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+@media (hover: hover) {
+  a:hover {
+    color: var(--accent);
+  }
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
