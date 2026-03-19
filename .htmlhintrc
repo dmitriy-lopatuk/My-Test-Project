@@ -3,9 +3,15 @@
   "attr-lowercase": true,
   "attr-value-double-quotes": true,
   "doctype-first": true,
+  "doctype-html5": true,
   "tag-pair": true,
   "spec-char-escape": true,
   "id-unique": true,
   "src-not-empty": true,
-  "attr-no-duplication": true
+  "attr-no-duplication": true,
+  "html-lang-require": true,
+  "title-require": true,
+  "h1-require": true,
+  "alt-require": true,
+  "id-class-ad-disabled": true
 }

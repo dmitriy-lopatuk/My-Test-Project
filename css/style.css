@@ -1,7 +1,9 @@
 :root {
   --white: #fff;
   --black: #000;
-  --accent: #ffd417;
+  --bg: #ece7ca;
+  --accent: #e67b23;
+  --base-tr: 0.3s;
 }
 
 *,
@@ -13,7 +15,7 @@
 body {
   margin: 0;
   color: var(--white);
-  background-color: var(--black);
+  background-color: var(--bg);
   font-family: Roboto, sans-serif;
 }
 
@@ -22,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
 }
 
@@ -30,11 +33,31 @@ h6 {
   a:hover {
     color: var(--accent);
   }
+
+  button:hover {
+    background: transparent;
+    border-color: var(--accent);
+    color: var(--accent);
+  }
 }
 
 a {
   color: var(--white);
   text-decoration: none;
+  transition: var(--base-tr);
+}
+
+button {
+  margin: 50px;
+  padding: 15px;
+  min-width: 150px;
+  font-family: inherit;
+  color: var(--white);
+  background-color: var(--accent);
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  transition: var(--base-tr);
 }
 
 ul,
